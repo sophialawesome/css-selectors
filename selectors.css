@@ -1,4 +1,29 @@
-#intro {
-    background-color: goldenrod;
-    border: 1px solid black;
+/*
+  This will select both of the article__header elements
+*/
+.article .article__header {
+    font-size: 1.85em;
+    line-height: 1.2em;
 }
+
+/*
+  This will select only the section and ignore the div
+*/
+.article > .article__header {
+    font-size: 1.85em;
+    line-height: 1.2em;
+}
+/*
+  This will select only a section that directly follows another section
+*/
+section + section {
+    margin: 20px 0 10px 0;
+  }
+  
+  
+  /*
+    This will select all sibling sections regardless if they are direct
+  */
+  section ~ section {
+    margin: 20px 0 10px 0;
+  }
